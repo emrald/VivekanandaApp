@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+	<style name="horizontal_line_style">
+	  	<item name="android:layout_width">fill_parent</item>
+	  	<item name="android:layout_height">0dip</item>
+	  	<item name="android:background">#A4B0B9</item>
+	</style>
+</resources>

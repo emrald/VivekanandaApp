@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bk" >
+	
+    <RelativeLayout
+        android:id="@+id/rel_mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relbottom"
+        android:background="@drawable/bk_inner" >
+
+        <com.clarusapps.SwamiVivekananda.HScrollview
+            android:id="@+id/hscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear"
+            android:layout_margin="12dp" >
+           
+        </com.clarusapps.SwamiVivekananda.HScrollview>
+       
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/btn_SendSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/send_sms" />
+
+            <Button
+                android:id="@+id/btn_Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/share" />
+
+          
+
+            <Button
+                android:id="@+id/btn_makeFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/make_it_fav" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
